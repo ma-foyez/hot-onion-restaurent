@@ -1,0 +1,26 @@
+.category button{
+    background: none;
+    border: none;
+    margin-left: 15px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.category button:focus{
+    outline: none;
+    color: #f91944;
+    border-bottom: 3px solid #f91944;
+}
+.category button:hover{
+    color: #f91944;
+    border-bottom: 2px solid #f91944;
+}
+.checkout-btn{
+    background-color: lightgray;
+    border: none;
+    padding: 6px 25px;
+    color: #fff;
+    border-radius: 10px;
+}
+.checkout-btn:focus{
+    outline: none;
+}

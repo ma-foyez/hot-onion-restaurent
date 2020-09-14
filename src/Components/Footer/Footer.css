@@ -1,0 +1,20 @@
+footer img{
+    height: 60px;
+}
+footer  a{
+    color: #ffffff;
+    display: block;
+    line-height: 2;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color:red;
+}
+.bottom-manu{
+    display:flex;
+    float:right;
+}
+.footer{
+    text-align: center;
+}

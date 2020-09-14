@@ -1,24 +1,40 @@
-import React from 'react';
+import React, { useState, createContext } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import { Button, Navbar } from 'react-bootstrap';
+import Header from './Components/Header/Header';
+import TopBanner from './Components/TopBanner/TopBanner';
+import CategoryContainer from './Components/CategoryContainer/CategoryContainer';
+import Footer from './Components/Footer/Footer';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import FoodDetails from './Components/FoodDetails/FoodDetails';
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <Header></Header>
+        <Switch>
+          <Route exact path="/">
+            <TopBanner></TopBanner>
+            <CategoryContainer></CategoryContainer>
+            <Footer></Footer>
+          </Route>
+          <Route exact path="/home">
+            <TopBanner></TopBanner>
+            <CategoryContainer></CategoryContainer>
+            <Footer></Footer>
+          </Route>
+          <Route path="/type/:foodID">
+            <FoodDetails></FoodDetails>
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

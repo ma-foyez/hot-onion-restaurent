@@ -1,0 +1,25 @@
+.food-body{
+    margin: 15px;
+    transition: 0.5s all;
+}
+.food-body:hover{
+    -webkit-box-shadow: 0px 3px 13px 0px lightgrey;
+    -moz-box-shadow: 0px 3px 13px 0px lightgrey;
+    box-shadow: 0px 3px 13px 0px lightgrey;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.food-body h5{
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #000;
+}
+.food-body small{
+    color: gray;
+    font-weight: 600;
+}
+.food-body h6{
+    font-weight: 700;
+    margin-top: 10px;
+    color: #000;
+}

@@ -1,0 +1,26 @@
+.logo{
+    height: 40px;
+}
+.nav-item{
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+Link{
+    text-decoration: none!important;
+}
+.sign-up{
+    background-color: #f91944;
+    border: 2px solid #f91944;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: 600;
+    color: white !important;
+    transition: 0.5s all;
+    padding: 2px 20px !important;
+    width: auto;
+}
+.sign-up:hover{
+    background: none;
+    color: black!important;
+}
