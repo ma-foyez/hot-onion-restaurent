@@ -1,0 +1,79 @@
+.form-banner{
+    background-image: url('../../image/bannerbackground.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 80vh;
+    filter: contrast(140%) brightness(100%);
+}
+.user-form{
+    text-align: center;
+}
+.user-form img{
+    width: 50%;
+    float: center;
+    margin-bottom: 35px;
+}
+.user-form input{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #c5c5c5ce!important;
+    padding: 10px 5px !important;
+    border: none;
+    border: 2px solid #c5c5c5ce!important;
+    border-radius: 5px;
+}
+.error{
+    color: rgba(204, 20, 20, 0.884);
+    font-weight: bold;
+    float: left;
+    margin-bottom:5px;
+}
+.user-form .submit-btn{
+    background-color: #f91944!important;
+    color: #fff;
+}
+.user-form .user-toggle{
+    color: #f91944;
+    cursor: pointer;
+}
+.user-form p{
+    font-weight: bold;
+}
+.other-signIn-method .facebook, .google{
+    display: block;
+    width: 100%;
+    padding: 0px 20px;
+    margin-top: 15px;
+    background: none;
+    border-radius: 25px;
+    transition: 0.5s all;
+    border: none;
+    border: 2px solid #cdcdcd;
+    text-align: center;
+}
+.other-signIn-method .facebook:hover, .google:hover{
+    background-color: #f91944;
+    color: #fff!important;
+}
+.facebook img{
+    width: 34px;
+    position: relative;
+    margin-top: 3px;
+    left: -4%;
+}
+.google img{
+    width: 32px;
+    position: relative;
+    margin-top: 3px;
+    left: -13%;
+}
+.other-signIn-method button{
+    background: none;
+    border: none;
+    font-weight: bold;
+}
+.other-signIn-method button:focus{
+    outline: none;
+}

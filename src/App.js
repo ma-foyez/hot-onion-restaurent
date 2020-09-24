@@ -13,29 +13,46 @@ import {
   Link
 } from "react-router-dom";
 import FoodDetails from './Components/FoodDetails/FoodDetails';
-function App() {
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import Shipment from './Components/Shipment/Shipment';
+import Login from './Components/Login/Login';
 
+export const userContext = createContext();
+
+function App() {
+  const [addProduct, setAddProduct] = useState([])
+  const [loggedInUser, setLoggedInUser] = useState({
+    name: "",
+    password: "",
+    email: "",
+  })
   return (
-    <div>
+    <userContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
-        <Header></Header>
+        <Header addProduct={addProduct} setAddProduct={setAddProduct}></Header>
         <Switch>
           <Route exact path="/">
             <TopBanner></TopBanner>
-            <CategoryContainer></CategoryContainer>
+            <CategoryContainer addProduct={addProduct} setAddProduct={setAddProduct}></CategoryContainer>
             <Footer></Footer>
           </Route>
           <Route exact path="/home">
             <TopBanner></TopBanner>
-            <CategoryContainer></CategoryContainer>
+            <CategoryContainer addProduct={addProduct} setAddProduct={setAddProduct}></CategoryContainer>
             <Footer></Footer>
           </Route>
           <Route path="/type/:foodID">
-            <FoodDetails></FoodDetails>
+            <FoodDetails addProduct={addProduct} setAddProduct={setAddProduct}></FoodDetails>
           </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <PrivateRoute path="/shipment">
+            <Shipment addProduct={addProduct} setAddProduct={setAddProduct}></Shipment>
+          </PrivateRoute>
         </Switch>
       </Router>
-    </div>
+    </userContext.Provider>
   );
 }
 

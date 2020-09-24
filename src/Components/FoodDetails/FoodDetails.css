@@ -1,0 +1,45 @@
+.food-amount{
+    margin-left: 20px;
+    border: 2px solid #cdcdcd;
+    border-radius: 25px;
+    padding: 1px 15px;
+    font-size: 22px;
+}
+.food-amount button{
+    background: none;
+    border: none;
+    font-weight: 800;
+}
+.food-amount button:focus{
+    outline: none;
+    color:  #f91944;
+}
+.add-product{
+    background-color: #f91944;
+    border: 2px solid #f91944;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: 600;
+    color: white !important;
+    transition: 0.5s all;
+    padding: 5px 20px !important;
+    width: auto;
+}
+.add-product:focus{
+    outline: none;
+}
+.add-product:hover{
+    background: none;
+    color: black!important;
+}
+.disable{
+    background-color: #cdcdcd;
+    border: 2px solid #cdcdcd;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: 600;
+    color: black !important;
+    transition: 0.5s all;
+    padding: 5px 20px !important;
+    width: auto;
+}

@@ -1,42 +1,35 @@
 .top-banner{
     background-image: url('../../image/bannerbackground.png');
-    /* background-size: cover; */
+    background-size:cover;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 20px;
-    padding-bottom: 220px;
+    background-position: center center;
+    height:80vh;
+}
+.top-banner .form-control{
+    border-radius: 25px;
+    border:none;
+    padding-left: 20px;
+    font-weight: 600;
 }
 .search-food{
-    background-color: white;
-    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    height: 100%;
 }
-.search-food input{
-    width: 75%;
-    background: none;
-    border: none;
-    outline: none;
-    padding-left: 20px;
-    padding: 8px 10px;
-    font-weight: 500;
-
-}
-.search-food button{
-    width: 20%;
+.top-banner .search-food{
     border-radius: 25px;
     background-color: #f91944;
     border: 2px solid #f91944;
-    outline: none;
-    float: right;
-    font-weight: 700;
     color: #fff;
-    padding: 6px 10px !important;
+    font-weight: 600;
+    padding: 6px 20px !important;
     transition: 0.5s all;
 }
-.search-food button:focus{
+.search-food:focus{
     outline: none;
 }
-.search-food button:hover{
-    background: none;
+.search-food:hover{
+    background: #fff!important;
     color: #000;
 }

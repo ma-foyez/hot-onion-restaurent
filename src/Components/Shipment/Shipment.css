@@ -1,0 +1,40 @@
+.form input{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #e7e7e7ce!important;
+    padding: 10px 5px !important;
+    border: none;
+    border: 2px solid #e7e7e7ce!important;
+    border-radius: 5px;
+}
+.error{
+    color: rgba(204, 20, 20, 0.884);
+    font-weight: bold;
+    float: left;
+    margin-bottom:5px;
+}
+.form .submit-btn{
+    background-color: #f91944!important;
+    color: #fff;
+}
+.foods{
+    background-color: #e9e7e7b2;
+    padding: 20px;
+    border-radius: 10px;
+}
+.foods button{
+    padding: 4px 15px;
+    background-color: #f91944;
+    border: 2px solid #f91944;
+    border-radius: 25px;
+    color: #fff;
+    transition: 0.5s;
+}
+.foods button:hover{
+    background: none;
+    color: black;
+}
+.foods button:focus{
+    outline: none;
+}

@@ -5,7 +5,7 @@ import fakeData from '../../FakeData'
 import FoodCategory from '../FoodCategory/FoodCategory';
 import { Link } from 'react-router-dom';
 
-const CategoryContainer = () => {
+const CategoryContainer = (props) => {
     const [foodCategory, setFoodCategory] = useState('Lunch')
     const [foods, setFoods] = useState([]);
 
@@ -13,6 +13,9 @@ const CategoryContainer = () => {
         const foodData = fakeData.filter(food => food.type === foodCategory);
         setFoods(foodData)
     }, [foodCategory])
+    const addProduct = props.addProduct;
+    console.log(addProduct)
+  
     return (
         <>
             <div className="container category text-center mt-5">
@@ -27,7 +30,16 @@ const CategoryContainer = () => {
                     }
                 </div>
                 <div className="text-center mt-4">
-                    <button disabled className="checkout-btn">Check Out Your Food</button>
+                {
+                        props.addProduct.length ? 
+                        <Link to="/checkout">
+                            <button  className="btn btn-danger btn-secondary">Check Out Your Food</button>
+                        </Link>
+                        :
+                        <button disabled className="btn disabled btn-secondary">Check Out Your Food</button>
+
+                    }
+
                 </div>
             </div>
         </>
